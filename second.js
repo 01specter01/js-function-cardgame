@@ -25,17 +25,42 @@
 // }
 // console.log(createPassword(9, "hallo", "Hi", "$%"));
 
-let arr = [`A,B,C,D,E,F,G,a,b,c,d,e,f,g,!,@,$,%,&`];
-let result = " ";
-function getRandom() {
-    result = Math.floor(Math.random() * 20);
-    if (result !== "string") {
-        console.log(true);
-        return arr[result];
-    } else {
-    }
-    console.log(false);
-    return false;
-}
+// let arr = [`A,B,C,D,E,F,G,a,b,c,d,e,f,g,!,@,$,%,&`];
+// let result = " ";
 
-console.log(getRandom());
+// function getRandom() {
+//     result = Math.floor(Math.random() * 20);
+//     if (result !== "string") {
+//         console.log(true);
+//         return arr[result];
+//     } else {
+//     }
+//     console.log(false);
+//     return false;
+// }
+
+// console.log(getRandom());
+
+function createPassword(length) {
+    console.log(`---------------Q2----------------`);
+    let result = "";
+    let characters = "Almnopq@";
+    for (let i = 0; i < length; i++) {
+        result += characters.charAt(
+            Math.floor(Math.random() * characters.length)
+        );
+    }
+    console.log(true);
+    return result;
+}
+/////////////////////
+//__________ERSTELLEN 4 FUNCTIONS LENGTH ALS ERSTE, JEWEILS 3 CHARACTERS ERSTELLEN RANDOM UND AM SCHLUSS ZUSAMMENFÜGEN DAS ALLE 3 CARACTERVARIANTEN VERFÜGT UND LENGTH ZB AUF 9 EINGEHALTEN IST!!!!!!!!!!!!!!!!
+/////////////////
+console.log(createPassword(8));
+
+ function createPassword(length) {
+     let arrayOfElements
+     for(let i = 0; cre)
+     console.log(`---------------Q2----------------`);
+ }
+ console.log(createPassword(8));

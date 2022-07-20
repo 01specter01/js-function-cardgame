@@ -14,14 +14,13 @@ function createPassword(
     useCapitalLetters,
     useSpecialCharacters
 ) {
+    console.log(`---------------Q2----------------`);
     if (
         length >= 8 &&
-        useSmallLetters >= 2 &&
-        useCapitalLetters >= 1 &&
-        useSpecialCharacters >= 1
+        useSmallLetters === true &&
+        useCapitalLetters === true &&
+        useSpecialCharacters === true
     )
-        return randomPassword;
+        return `${typeof length} and ${typeof useSmallLetters} and ${typeof useCapitalLetters} and ${typeof useSpecialCharacters}`;
 }
-console.log("createPassword", length);
-
-createPassword();
+console.log(createPassword(createPassword.length, "hallo", "Hi", "$%"));

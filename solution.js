@@ -59,7 +59,7 @@ function getCard() {
         "König Herz",
         "Ass Herz",
     ];
-    return cards.splice(1, 1);
+    return cards.splice(getRandom(), 1).toString();
 }
 console.log(getCard());
 // Bonus:
@@ -67,4 +67,3 @@ console.log(getCard());
 function getRandom() {
     return Math.floor(Math.random() * 53);
 }
-console.log(getRandom());

@@ -58,10 +58,51 @@ const cards = [
 ];
 function getCard() {
     console.log(`---------------Q1----------------`);
-
-    return cards.splice(getRandom(), 1)[0];
+    if (cards.length > 1) {
+        return cards.splice(getRandom(), 1)[0];
+    } else {
+        return "Der Stapel ist leer";
+    }
 }
 
+console.log(getCard());
+console.log(getCard());
+console.log(getCard());
+console.log(getCard());
+console.log(getCard());
+console.log(getCard());
+console.log(getCard());
+console.log(getCard());
+console.log(getCard());
+console.log(getCard());
+console.log(getCard());
+console.log(getCard());
+console.log(getCard());
+console.log(getCard());
+console.log(getCard());
+console.log(getCard());
+console.log(getCard());
+console.log(getCard());
+console.log(getCard());
+console.log(getCard());
+console.log(getCard());
+console.log(getCard());
+console.log(getCard());
+console.log(getCard());
+console.log(getCard());
+console.log(getCard());
+console.log(getCard());
+console.log(getCard());
+console.log(getCard());
+console.log(getCard());
+console.log(getCard());
+console.log(getCard());
+console.log(getCard());
+console.log(getCard());
+console.log(getCard());
+console.log(getCard());
+console.log(getCard());
+console.log(getCard());
 console.log(getCard());
 console.log(getCard());
 console.log(getCard());
@@ -80,5 +121,5 @@ console.log(getCard());
 // Bonus:
 // Implementiere eine Funktion mit dem Namen shuffleCards welche die Karten im Array cards mischt.
 function getRandom() {
-    return Math.floor(Math.random() * 53);
+    return Math.floor(Math.random() * cards.length);
 }

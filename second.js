@@ -8,19 +8,34 @@
 //3. useCapitalLetters, ein boolean, gibt an ob das Passwort große Buchstaben von A-Z enthalten soll
 //4. useSpecialCharacters, ein boolean, gibt an ob das Passwort Sonderzeichen wie @ ! $ % & \* enthalten soll.
 
-function createPassword(
-    length,
-    useSmallLetters,
-    useCapitalLetters,
-    useSpecialCharacters
-) {
-    console.log(`---------------Q2----------------`);
-    if (
-        length >= 8 &&
-        useSmallLetters === true &&
-        useCapitalLetters === true &&
-        useSpecialCharacters === true
-    )
-        return `${typeof length} and ${typeof useSmallLetters} and ${typeof useCapitalLetters} and ${typeof useSpecialCharacters}`;
+// function createPassword(
+//     length,
+//     useSmallLetters,
+//     useCapitalLetters,
+//     useSpecialCharacters
+// ) {
+//     console.log(`---------------Q2----------------`);
+//     if (
+//         length >= 8 &&
+//         useSmallLetters === true &&
+//         useCapitalLetters === true &&
+//         useSpecialCharacters === true
+//     )
+//         return `${typeof length} and ${typeof useSmallLetters} and ${typeof useCapitalLetters} and ${typeof useSpecialCharacters}`;
+// }
+// console.log(createPassword(9, "hallo", "Hi", "$%"));
+
+let arr = [`A,B,C,D,E,F,G,a,b,c,d,e,f,g,!,@,$,%,&`];
+let result = " ";
+function getRandom() {
+    result = Math.floor(Math.random() * 20);
+    if (result !== "string") {
+        console.log(true);
+        return arr[result];
+    } else {
+    }
+    console.log(false);
+    return false;
 }
-console.log(createPassword(createPassword.length, "hallo", "Hi", "$%"));
+
+console.log(getRandom());
